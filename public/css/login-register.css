@@ -1,0 +1,86 @@
+:root {
+  --main-text-color: #dbdbdb;
+  --main-bg-color: #56bbc8;
+  --secondary-bg-color: rgba(10, 89, 174, 0.5);
+  --accent-color: #ad0948;
+  --accent-secondary-color: #e59500;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg?cs=srgb&dl=pexels-pixabay-461940.jpg&fm=jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-register {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 300px;
+  padding: 2rem;
+  /* background: linear-gradient(
+    rgba(145, 152, 229, 0.3),
+    rgba(230, 100, 101, 0.3)
+  ); */
+  border-radius: 1rem;
+  color: var(--main-text-color);
+}
+
+.login-register input {
+  color: white;
+  width: 100%;
+  min-width: 200px;
+  background: transparent;
+  border-radius: 0.5rem;
+  border: solid var(--accent-secondary-color) 3px;
+  padding: 0.5rem;
+}
+
+.login-btn {
+  color: var(--main-text-color);
+  display: block;
+  padding: 0.5rem 0.5rem;
+  margin: 0 auto;
+  background-color: rgb(0, 1, 8);
+  background-image: linear-gradient(
+    45deg,
+    rgba(195, 112, 199, 0.8) 0%,
+    rgba(235, 179, 116, 0.8) 65%,
+    rgba(117, 171, 252, 1) 98%
+  );
+  transition: all 0.5s ease-out;
+  background-size: 1px 100px;
+  background-position: 0 -10px;
+  border: none;
+  border-radius: 0.5rem;
+  min-width: 200px;
+}
+
+.login-btn:hover {
+  background-position: 1px -50px;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+}

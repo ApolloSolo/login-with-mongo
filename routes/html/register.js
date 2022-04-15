@@ -9,10 +9,10 @@ router.get("/", (req, res) => {
 router.post("/", async (req, res) => {
   let password = await bcrypt.hash(req.body.password, 10);
   const newUser = await new User({
-    username: req.body.username,
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
     email: req.body.email,
-    password,
-    age: req.body.age,
+    password
   });
   await newUser.save();
   res.render('home');

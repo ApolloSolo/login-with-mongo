@@ -8,8 +8,9 @@ router.get("/", (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const { username, password } = req.body;
-    const user = await User.findOne({ username });
+    const { email, password } = req.body;
+    console.log(email, password)
+    const user = await User.findOne({ email });
     const validPassword = bcrypt.compare(password, user.password);
     if (validPassword) {
       res.render("home");
